@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage - Kerridge Digital Website</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Has website's logo, navigation links & hamburger menu for mobile responsiveness -->
+    <header>
+      <nav class="navbar">
+        <!-- Logo area linking back to homepage -->
+        <h2 class="logo">
+          <a href="#">
+            <img src="images/logo.jpg" alt="Kerridge Logo" class="logo-image">Kerridge</a></h2>
+        <!-- Checkbox toggler for mobile menu & hamburger icon -->
+        <input type="checkbox" id="menu-toggler">
+        <label for="menu-toggler" id="hamburger-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </label>
+        <!-- Navigation links -->
+        <ul class="all-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="jobsss.html">Jobs</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <!-- Homepage with introduction text & call to action button linked to services -->
+    <section class="homepage" id="home">
+      <div class="content">
+        <div class="text">
+          <h1>Kerridge Digital</h1>
+          <p>
+            Step into your future with roles that match your ambition. 
+            <br> Discover high-impact careers in tech & leadership.
+          </p>
+        </div>
+        <a href="#services">Our Services</a>
+      </div>
+    </section>
+
+    <!-- List of service cards offered -->
+    <section class="services" id="services">
+      <h2>Our Services</h2>
+      <p>Explore our wide range of career building services.</p>
+      <ul class="cards">
+        <li class="card">
+          <img src="images/webinar.jpg" alt="img">
+          <h3>Webinar</h3>
+          <p>Join live sessions to grow your skills and industry knowledge.</p>
+        </li>
+        <li class="card">
+          <img src="images/resume.png" alt="img">
+          <h3>Resumé Builder</h3>
+          <p>Create a standout CV effortlessly with our smart, customizable templates.</p>
+        </li>
+        <li class="card">
+          <img src="images/assesment.png" alt="img">
+          <h3>Skill Assessment Tests</h3>
+          <p>Showcase your abilities with industry-standard skills assessments.</p>
+        </li>
+        <li class="card">
+          <img src="images/insights.png" alt="img">
+          <h3>Company Insights</h3>
+          <p>Get an inside look at workplace culture, values, and employee reviews.</p>
+        </li>
+        <li class="card">
+          <img src="images/alerts.png" alt="img">
+          <h3>Job Alerts</h3>
+          <p>Never miss an opportunity—get alerts for jobs tailored to your preferences.</p>
+        </li>
+        <li class="card">
+          <a href="faq.html">
+          <img src="images/faq.png" alt="img">
+          <h3>FAQs</h3></a>
+          <p>Have questions? Here you'll find answers as well as support.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Copyright & hyperlinks links -->
+    <footer>
+      <div>
+        <span>Copyright © 2025 All Rights Reserved</span>
+        <span class="link">
+            <a href="#">Home</a>
+            <a href="contact.html">Contact</a>
+        </span>
+      </div>
+    </footer>
+  </body>
+</html>

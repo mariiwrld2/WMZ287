@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerridge Digital Website - Contact Us</title>
+    <link rel="stylesheet" href="style-contact.css">
+    <!-- Link to FontAwesome content delivery network icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+  <body>
+    <!-- Has website's logo, navigation links & hamburger menu for mobile responsiveness -->
+    <header>
+      <nav class="navbar">
+        <!-- Logo area linking back to homepage -->
+        <h2 class="logo">
+          <a href="index.html">
+            <img src="images/logo.jpg" alt="Kerridge Logo" class="logo-image">Kerridge</a></h2>
+        <!-- Checkbox toggler for mobile menu & hamburger icon -->
+        <input type="checkbox" id="menu-toggler">
+        <label for="menu-toggler" id="hamburger-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </label>
+        <!-- Navigation links -->
+        <ul class="all-links">
+          <li><a href="#home">Home</a></li>
+          <!-- 
+          Link to services section was just '#services' but that section is on another page so
+          the page 'index.html' shouold be before the '#services' to link to the services section 
+          -->
+          <li><a href="index.html#services">Services</a></li> 
+          <li><a href="jobsss.html">Jobs</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Team Introduction Section with 3 cards  -->
+    <section class="services" id="services">
+      <h2>Meet The Team</h2>
+      <p>Behind every great project is an even greater team — say hello!</p>
+      <ul class="cards">
+        <li class="card">
+          <img src="images/matt.png" alt="img">
+          <h3>Matthew Mitchell</h3>
+          <h4>Chief Technology Officer</h4>
+          <p>
+            With over a decade of experience in software engineering and cloud architecture, 
+            Matthew leads our tech vision.
+          </p>
+        </li>
+        <li class="card">
+          <img src="images/jordan.png" alt="img">
+          <h3>Jordan Reyes</h3>
+          <h4>Lead UX/UI Designer</h4>
+          <p>
+            Jordan is the creative mind behind our intuitive designs. With a background 
+            in user psychology and interactive media.
+          </p>
+        </li>
+        <li class="card">
+          <img src="images/liam.png" alt="img">
+          <h3>Liam Worthy</h3>
+          <h4>Cyber Security Specialist</h4>
+          <p>Liam brings expertise in network security, threat analysis, and compliance. 
+            Dedicated to protecting client data and maintaining system integrity</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+      <h2>Contact Us</h2>
+      <p>Reach out to us for any inquiries or feedback.</p>
+      <div class="row"> <!-- Row containing 2 columns -->
+        <!-- Contact information column -->
+        <div class="col information">
+          <div class="contact-details">
+            <!-- Each contact details uses different FontAwesome icon -->
+            <p><i class="fas fa-map-marker-alt"></i> 62 Willbrook House, Newcastle, NE8 2AZ</p>
+            <p><i class="fas fa-envelope"></i> info@kerridgedigitals.com</p>
+            <p><i class="fas fa-phone"></i> (44) 7925-714876</p>
+            <p><i class="fas fa-clock"></i> Monday - Friday: 9:00 AM - 5:00 PM</p>
+            <p><i class="fas fa-clock"></i> Saturday: 10:00 AM - 3:00 PM</p>
+            <p><i class="fas fa-clock"></i> Sunday: Closed</p>
+            <p><i class="fas fa-globe"></i> www.kerridgedigital.com</p>
+          </div>          
+        </div>
+
+        <!-- Contact form column -->
+        <div class="col form">
+          <form>
+            <input type="text" placeholder="Name*" required>
+            <input type="email" placeholder="Email*" required>
+            <textarea placeholder="Message*" required></textarea>
+            <button id="submit" type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Has basic hyperlinks & copyright -->
+    <footer>
+      <div>
+        <span>Copyright © 2025 All Rights Reserved</span>
+        <span class="link">
+            <a href="#">Home</a>
+            <a href="#">Contact</a>
+        </span>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frequently Asked Questions</title>
+    <link rel="stylesheet" href="style-faq.css" />
+    <!-- Contains icon font for dropdown arrow -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Has website's logo, navigation links & hamburger menu for mobile responsiveness -->
+    <header>
+      <nav class="navbar">
+        <!-- Logo area linking back to homepage -->
+        <h2 class="logo">
+          <a href="index.html">
+            <img src="images/logo.jpg" alt="Kerridge Logo" class="logo-image">Kerridge</a></h2>
+        <!-- Checkbox toggler for mobile menu & hamburger icon -->
+        <input type="checkbox" id="menu-toggler">
+        <label for="menu-toggler" id="hamburger-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </label>
+        <!-- Navigation links -->
+        <ul class="all-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="jobsss.html">Jobs</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- FAQ section starts here -->
+    <div class="page-start">
+      <h1>Frequently Asked Questions</h1>
+      <p>
+        Have questions? Here you'll find the answers most valued by our partners, along 
+        with access to step-by-step instructions & support.
+      </p>
+
+      <!-- FAQ items start here -->
+      <div class="faq">
+        <button class="question">
+          What is Kerridge?
+          <!-- Font awesome downward arrow icon -->
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <!-- Hidden panel contains answer -->
+        <div class="pannel">
+          <p>
+            Kerridge is a career and community platform that connects job seekers with employers 
+            across industries like IT, software, and business management. We also provide 
+            resources, FAQs, and support to help people advance their careers.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="question">
+          Is Kerridge free to use?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Yes! Kerridge is completely free for job seekers. 
+            Employers and recruiters may have access to additional services 
+            depending on their needs.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="question">
+          Can I contact employers directly through Kerridge?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            No, all communication with employers is done through the job application forms. 
+            We do not publicly display employer contact information for privacy and security.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="question">
+          Is Kerridge available internationally?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            While the platform is based in the UK, Kerridge supports international 
+            applicants and listings. We plan to expand our regional filters soon.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="question">
+          What makes Kerridge different?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Kerridge focuses on quality over quantity. We specialize in tech and business 
+            roles, prioritize clean design and usability, and we support both employers 
+            and job seekers with helpful tools and personal support.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="question">
+          Can I create a profile on Kerridge?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Currently, users do not create individual profiles. However, we are working on 
+            adding a user dashboard feature that will allow for saved jobs, alerts, and faster 
+            applications.
+          </p>
+        </div>
+      </div>
+    </div>
+
+      <!-- Accordion behaviour to expand/collaspe FAQ items -->
+      <script>
+      var acc = document.getElementsByClassName("question");
+      var i;
+
+      // Loop through all questions and add click event listener
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active"); //toggle active class on clicked question
+          this.parentElement.classList.toggle("active"); //toggle active class on parent element 
+
+          var pannel = this.nextElementSibling; //grabs answer panel
+
+          //toggle between hiding and showing the answer panel
+          if (pannel.style.display === "block") {
+            pannel.style.display = "none"; //hide if open
+          } else {
+            pannel.style.display = "block"; //show if hidden 
+          }
+        });
+      }
+      </script>
+
+    <!-- Has basic hyperlinks & copyright -->
+    <footer>
+      <div class="footer-space">
+       <span>Copyright © 2025 All Rights Reserved</span>
+       <span class="link">
+          <a href="index.html">Home</a>
+          <a href="contact">Contact</a>
+        </span>
+      </div>
+    </footer>
+  </body>
+</html>
